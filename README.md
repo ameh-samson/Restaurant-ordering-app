@@ -13,4 +13,4 @@ Head over to https://vitejs.dev/ to learn more about using vite
 
 This project is a meal ordering app where customers can order their meal
 
-## The app uses object array to render the meal to the DOM
+The app uses object array to render the meal to the DOM
