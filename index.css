@@ -1,3 +1,47 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    margin: 0;
-} 
+  margin: 0;
+  padding: 0;
+  font-family: "Smythe", sans-serif;
+}
+
+/* typography */
+
+h1 {
+  font-size: 39px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+form {
+  font-family: Verdana, sans-serif;
+}
+
+/* layout */
