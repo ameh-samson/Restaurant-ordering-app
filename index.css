@@ -82,7 +82,7 @@ p {
   background: url("img/header-img.png");
   background-position: center;
   background-size: cover;
-  padding: 46px;
+  padding: 40px;
   margin-bottom: 67px;
 }
 
@@ -96,14 +96,12 @@ p {
 }
 
 .menu-item-img {
-  display: inline-block;
-  width: 70px;
-  height: 89px;
+  font-size: 32px;
 }
 
 .menu-item-content {
   flex: 1;
-  margin-left: 30px;
+  margin: 0 10px;
 }
 
 .menu-item-description {
@@ -121,9 +119,8 @@ p {
   background: none;
   border: 1.5px solid #dedede;
   border-radius: 50%;
-  padding: 10px;
+  padding: 5px;
   cursor: pointer;
-  box-sizing: border-box;
 }
 
 .checkout-title {
