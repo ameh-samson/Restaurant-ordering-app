@@ -146,6 +146,7 @@ p {
   margin-left: 13px;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .checkout-total-price-container {
@@ -165,6 +166,7 @@ p {
   border: none;
   border-radius: 3px;
   margin-bottom: 54px;
+  cursor: pointer;
 }
 
 .form-section {
@@ -212,6 +214,7 @@ p {
 }
 
 .order-complete-message {
+  display: none;
   color: rgba(6, 95, 70, 1);
   background: rgba(236, 253, 245, 1);
   padding: 10px 15px;

@@ -2,6 +2,8 @@ import { menuArray } from "./data.js";
 
 const menuSection = document.querySelector(".menu-section");
 const checkoutSection = document.querySelector(".checkout-section");
+const formSection = document.querySelector(".form-section");
+const orderCompleteMessage = document.querySelector(".order-complete-message");
 
 const selectedOrders = [];
 
@@ -12,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("click", (e) => {
   if (e.target.dataset.itemId) {
     const itemId = e.target.dataset.itemId;
-    const selectedItem = menuArray.find((item) => item.id === itemId);
+    const selectedItem = menuArray.find((item) => item.id === Number(itemId));
 
     if (selectedItem) {
       selectedOrders.push({
@@ -21,6 +23,10 @@ document.addEventListener("click", (e) => {
       });
       renderSelectedOrder();
     }
+  }
+
+  if (e.target.dataset.action === "completeOrder") {
+    formSection.style.display = "block";
   }
 });
 
@@ -58,13 +64,26 @@ function renderSelectedOrder() {
   `
   );
 
+  const totalPrice = calculateTotalPrice(selectedOrders);
+  console.log(totalPrice);
+
   const checkoutContainer = `
     <div class="checkout-container">
       <h2 class="checkout-title">Your order</h2>
       ${htmlArray.join("")}
-      <button class="purchase-btn">Complete order</button>
+
+
+      <div class="checkout-total-price-container">
+        <h2 class="checkout-total-price-text">Total price:</h2>
+        <h3 class="checkout-total-price">${totalPrice}</h3>
+      </div>
+      <button class="purchase-btn" data-action="completeOrder">Complete order</button>
     </div>
   `;
 
   checkoutSection.innerHTML = checkoutContainer;
+}
+
+function calculateTotalPrice(orders) {
+  return orders.reduce((total, { price }) => total + price, 0);
 }
