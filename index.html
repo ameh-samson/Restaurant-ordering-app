@@ -23,107 +23,86 @@
         <h2 class="header-description">The best burgers and pizzas in town.</h2>
       </header>
 
-      <!-- <section class="menu-section">
-        <div class="container">
-          <div class="menu-item-container">
-            <img class="menu-item-img" src="img/itemgraphic.png" alt="" />
-            <div class="menu-item-content">
-              <h2 class="menu-item-title">Pizza</h2>
-              <p class="menu-item-description">pepperoni,mushrom,mozarella</p>
-              <h3 class="menu-item-price">$14</h3>
-            </div>
-
-            <div>
-              <button class="menu-item-add-btn">+</button>
-            </div>
+      <section class="menu-section container">
+        <!-- <div class="menu-item-container">
+          <img class="menu-item-img" src="img/itemgraphic.png" alt="" />
+          <div class="menu-item-content">
+            <h2 class="menu-item-title">Pizza</h2>
+            <p class="menu-item-description">pepperoni,mushrom,mozarella</p>
+            <h3 class="menu-item-price">$14</h3>
           </div>
 
-          <div class="menu-item-container">
-            <img class="menu-item-img" src="img/itemgraphic.png" alt="" />
-            <div class="menu-item-content">
-              <h2 class="menu-item-title">Pizza</h2>
-              <p class="menu-item-description">pepperoni,mushrom,mozarella</p>
-              <h3 class="menu-item-price">$14</h3>
-            </div>
+          <div>
+            <button class="menu-item-add-btn">+</button>
+          </div> 
+        </div>-->
+      </section>
 
-            <div>
-              <button class="menu-item-add-btn">+</button>
+      <section class="checkout-section container">
+        <!-- <div class="checkout-container">
+          <h2 class="checkout-title">Your order</h2> -->
+
+        <!-- <div class="checkout-inner-container">
+            <div class="checkout-inner-left">
+              <h2 class="checkout-item-name">Pizza</h2>
+              <button class="checkout-remove-item-btn">remove</button>
             </div>
+            <h3 class="checkout-item-price">$14</h3>
+          </div> -->
+
+        <!-- <div class="checkout-inner-container">
+            <div class="checkout-inner-left">
+              <h2 class="checkout-item-name">Pizza</h2>
+              <button class="checkout-remove-item-btn">remove</button>
+            </div>
+            <h3 class="checkout-item-price">$14</h3>
           </div>
-        </div>
+
+          <div class="checkout-total-price-container">
+            <h2 class="checkout-total-price-text">Total price:</h2>
+            <h3 class="checkout-total-price">$26</h3>
+          </div> -->
+
+        <!-- <button class="purchase-btn">Complete order</button> -->
+        <!-- </div> -->
       </section>
 
-      <section class="checkout-section" style="display: none">
-        <div class="container">
-          <div class="checkout-container">
-            <h2 class="checkout-title">Your order</h2>
+      <section class="form-section container">
+        <form class="form" action="">
+          <h3 class="form-title">Enter card details</h3>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
 
-            <div class="checkout-inner-container">
-              <div class="checkout-inner-left">
-                <h2 class="checkout-item-name">Pizza</h2>
-                <button class="checkout-remove-item-btn">remove</button>
-              </div>
-              <h3 class="checkout-item-price">$14</h3>
-            </div>
+          <input
+            type="text"
+            name="card-number"
+            id="card-number"
+            placeholder="Enter card number"
+            required
+          />
 
-            <div class="checkout-inner-container">
-              <div class="checkout-inner-left">
-                <h2 class="checkout-item-name">Pizza</h2>
-                <button class="checkout-remove-item-btn">remove</button>
-              </div>
-              <h3 class="checkout-item-price">$14</h3>
-            </div>
+          <input
+            type="text"
+            name="card-CVV"
+            id="card-CVV"
+            placeholder="Enter card number"
+            required
+          />
 
-            <div class="checkout-total-price-container">
-              <h2 class="checkout-total-price-text">Total price:</h2>
-              <h3 class="checkout-total-price">$26</h3>
-            </div>
-
-            <button class="purchase-btn">Complete order</button>
-          </div>
-        </div>
+          <button class="pay-btn" id="pay-btn" type="submit">Pay</button>
+        </form>
       </section>
 
-      <section class="form-section">
-        <div class="container">
-          <form class="form" action="">
-            <h3 class="form-title">Enter card details</h3>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Enter your name"
-              required
-            />
-
-            <input
-              type="text"
-              name="card-number"
-              id="card-number"
-              placeholder="Enter card number"
-              required
-            />
-
-            <input
-              type="text"
-              name="card-CVV"
-              id="card-CVV"
-              placeholder="Enter card number"
-              required
-            />
-
-            <button class="pay-btn" id="pay-btn" type="submit">Pay</button>
-          </form>
-        </div>
+      <section class="order-complete-section container">
+        <h1 class="order-complete-message">
+          Thanks, James! Your order is on its way!
+        </h1>
       </section>
-
-      <section class="order-complete-section">
-        <div class="container">
-          <h1 class="order-complete-message">
-            Thanks, James! Your order is on its way!
-          </h1>
-        </div>
-      </section> -->
     </main>
 
     <!-- Javascript link -->
